@@ -22,7 +22,7 @@ WORKDIR /function/
 RUN pip install --no-cache --no-cache-dir --upgrade -r requirements.txt
 RUN rm -fr ~/.cache/pip /tmp*
 
-ENTRYPOINT ["python /function/main.py"]
+ENTRYPOINT ["python", "/function/main.py"]
 ```
 
 ## TODO
